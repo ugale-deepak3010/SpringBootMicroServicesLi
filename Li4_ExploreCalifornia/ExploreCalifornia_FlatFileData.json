@@ -1,0 +1,50 @@
+[
+	{
+		"packageName": "BackPack Cal",
+		"title": "The Mt. Whitney climbers Tours",
+		"blurb": "The Blurb",
+		"description": "The Description",
+		"bullets": "The bullets",
+		"difficulty": "Difficult",
+		"length": "4 days",
+		"price": 650,
+		"region": "Northen California",
+		"keywords": "Hiking, Climbing, Backpacking, Mt. Whitney"
+	},
+	{
+		"packageName": " 1 BackPack Cal",
+		"title": " 1 The Mt. Whitney climbers Tours",
+		"blurb": " 1 The Blurb",
+		"description": " 1 The Description",
+		"bullets": " 1 The bullets",
+		"difficulty": "Difficult",
+		"length": "4 days 1 ",
+		"price": 6501,
+		"region": "Northen California",
+		"keywords": "Hiking, Climbing, Backpacking, Mt. Whitney 1 "
+	},
+	{
+		"packageName": " 2 BackPack Cal",
+		"title": " 2 The Mt. Whitney climbers Tours",
+		"blurb": " 2 The Blurb",
+		"description": " 2 The Description",
+		"bullets": " 2 The bullets",
+		"difficulty": "Difficult",
+		"length": "4 days",
+		"price": 6502,
+		"region": "Northen California",
+		"keywords": "Hiking, Climbing, Backpacking, Mt. Whitney 2 "
+	},
+	{
+		"packageName": " 3 BackPack Cal",
+		"title": " 3 The Mt. Whitney climbers Tours",
+		"blurb": " 3 The Blurb",
+		"description": " 3 The Description",
+		"bullets": " 3 The bullets",
+		"difficulty": "Difficult",
+		"length": "4 days 3 ",
+		"price": 6503,
+		"region": "Northen California",
+		"keywords": "Hiking, Climbing, Backpacking, Mt. Whitney 3 "
+	}
+]
