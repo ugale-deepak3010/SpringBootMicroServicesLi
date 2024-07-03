@@ -13,10 +13,15 @@ import Li4_ExploreCalifornia.Model.Tour;
 import Li4_ExploreCalifornia.Model.TourRating;
 import Li4_ExploreCalifornia.Repository.TourRatingRepo;
 import Li4_ExploreCalifornia.Repository.TourRepo;
+import jakarta.transaction.Transactional;
+import jakarta.validation.ConstraintViolationException;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
+
+
 @Service
+@Transactional
 @AllArgsConstructor
 @NoArgsConstructor
 public class TourRatingService {
@@ -26,6 +31,17 @@ public class TourRatingService {
 
 	@Autowired
 	TourRepo tourRepo;
+	
+	
+	public void rateMany(int tourId, int score, List<Integer> customers) {
+		Tour tour= verifyTour(tourId);
+		
+		for (Integer customerId : customers) {
+			if (tourRatingRepo.findByTourIdAndCustomerId(tourId, customerId).isPresent()) {
+				throw new ConstraintViolationException("Unable to create duplicate rating!", null);
+			}tourRatingRepo.save(new TourRating(tour, customerId, score, null));
+		}
+	}
 
 	public TourRating createNew(int tourId, int customerId, int score, String comment) {
 

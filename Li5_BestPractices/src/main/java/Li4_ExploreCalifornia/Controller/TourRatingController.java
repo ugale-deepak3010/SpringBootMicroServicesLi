@@ -20,6 +20,8 @@ import Li4_ExploreCalifornia.Dto.TourRatingDto;
 import Li4_ExploreCalifornia.Model.TourRating;
 import Li4_ExploreCalifornia.Service.TourRatingService;
 import jakarta.validation.Valid;
+import jakarta.websocket.server.PathParam;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -30,6 +32,18 @@ public class TourRatingController {
 
 	@Autowired
 	private TourRatingService tourRatingService;
+	
+	
+	
+	
+	@PostMapping("/batch")	
+	public String postBatchTourRating(@PathVariable int tourId, @PathParam("score") int score, @RequestBody  List<Integer> customers) {
+		
+		tourRatingService.rateMany(tourId, score, customers);
+		
+		return "Added Successfully..!";
+	}
+	
 
 	@GetMapping("/tours")
 	public List<TourRatingDto> getAllRatingsForTour(@PathVariable(value = "tourId") int tourId) {
