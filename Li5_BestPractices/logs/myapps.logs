@@ -1,0 +1,301 @@
+2024-07-05T11:12:11.243+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 2768 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T11:12:11.257+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T11:12:13.351+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T11:12:13.464+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 3 JPA repository interfaces.
+2024-07-05T11:12:14.686+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-05T11:12:14.721+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-05T11:12:14.722+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-05T11:12:14.840+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-05T11:12:14.841+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3439 ms
+2024-07-05T11:12:15.319+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T11:12:15.665+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ff5e15fc-59a0-494c-a264-73339c299708 user=SA
+2024-07-05T11:12:15.668+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T11:12:15.749+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T11:12:15.881+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T11:12:15.954+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T11:12:16.666+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T11:12:18.546+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T11:12:18.650+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T11:12:19.623+05:30  WARN 2768 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T11:12:21.545+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T11:12:21.758+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-05T11:12:21.777+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Started Li4ExploreCaliforniaApplication in 11.341 seconds (process running for 12.789)
+2024-07-05T11:12:25.318+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-05T11:12:25.319+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-05T11:12:25.323+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-07-05T11:12:41.683+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-05T11:12:41.712+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T11:12:41.723+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T11:12:41.730+05:30  INFO 2768 --- [Li4_ExploreCalifornia] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T11:12:57.153+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplicationTests   : Starting Li4ExploreCaliforniaApplicationTests using Java 22.0.1 with PID 8784 (started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T11:12:57.160+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T11:12:59.696+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T11:12:59.825+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 3 JPA repository interfaces.
+2024-07-05T11:13:01.393+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T11:13:01.809+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e188f111-88ad-476c-9796-04029455b657 user=SA
+2024-07-05T11:13:01.815+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T11:13:01.929+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T11:13:02.078+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T11:13:02.148+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T11:13:02.414+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T11:13:04.164+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T11:13:04.280+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T11:13:05.930+05:30  WARN 8784 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T11:13:08.822+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T11:13:09.008+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplicationTests   : Started Li4ExploreCaliforniaApplicationTests in 12.773 seconds (process running for 18.966)
+2024-07-05T11:13:10.616+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T11:13:10.643+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T11:13:10.660+05:30  INFO 8784 --- [Li4_ExploreCalifornia] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T12:51:14.205+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 17220 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T12:51:14.215+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T12:51:17.697+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T12:51:17.852+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 3 JPA repository interfaces.
+2024-07-05T12:51:19.095+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplicationTests   : Starting Li4ExploreCaliforniaApplicationTests using Java 22.0.1 with PID 7728 (started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T12:51:19.099+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T12:51:21.066+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-05T12:51:21.106+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-05T12:51:21.106+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-05T12:51:21.366+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-05T12:51:21.370+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6931 ms
+2024-07-05T12:51:22.289+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T12:51:22.764+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T12:51:22.969+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 3 JPA repository interfaces.
+2024-07-05T12:51:23.071+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:59189e8c-04c2-4d62-bc12-c4d06b4281f6 user=SA
+2024-07-05T12:51:23.076+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T12:51:23.225+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T12:51:23.504+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T12:51:23.659+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T12:51:24.749+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T12:51:25.344+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T12:51:25.872+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d5de7233-ffa8-41d4-8f2b-8469bd72da94 user=SA
+2024-07-05T12:51:25.876+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T12:51:26.000+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T12:51:26.185+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T12:51:26.274+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T12:51:27.159+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T12:51:27.662+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T12:51:27.804+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T12:51:29.140+05:30  WARN 17220 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T12:51:29.383+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T12:51:29.487+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T12:51:31.666+05:30  WARN 7728 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T12:51:33.307+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T12:51:33.772+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-05T12:51:33.807+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Started Li4ExploreCaliforniaApplication in 20.615 seconds (process running for 22.98)
+2024-07-05T12:51:36.069+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T12:51:36.350+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplicationTests   : Started Li4ExploreCaliforniaApplicationTests in 18.243 seconds (process running for 21.025)
+2024-07-05T12:51:36.949+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-05T12:51:36.951+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-05T12:51:36.958+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-07-05T12:51:41.011+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T12:51:41.035+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T12:51:41.044+05:30  INFO 7728 --- [Li4_ExploreCalifornia] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T12:52:16.398+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-05T12:52:16.424+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T12:52:16.432+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T12:52:16.437+05:30  INFO 17220 --- [Li4_ExploreCalifornia] [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T12:52:31.389+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 7136 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T12:52:31.394+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T12:52:33.278+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T12:52:33.369+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+2024-07-05T12:52:34.392+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-05T12:52:34.416+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-05T12:52:34.417+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-05T12:52:34.528+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-05T12:52:34.528+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3041 ms
+2024-07-05T12:52:34.944+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T12:52:35.202+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:60133c49-d5ce-439d-8f93-3e32bcdba152 user=SA
+2024-07-05T12:52:35.205+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T12:52:35.275+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T12:52:35.374+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T12:52:35.431+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T12:52:35.864+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T12:52:37.305+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T12:52:37.396+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T12:52:38.237+05:30  WARN 7136 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T12:52:40.039+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T12:52:40.206+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-05T12:52:40.235+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Started Li4ExploreCaliforniaApplication in 9.502 seconds (process running for 10.529)
+2024-07-05T12:52:41.314+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-05T12:52:41.314+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-05T12:52:41.318+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-07-05T12:52:51.831+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1043 ms
+2024-07-05T12:57:22.317+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-05T12:57:22.339+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T12:57:22.349+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T12:57:22.355+05:30  INFO 7136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T12:57:25.532+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 12136 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T12:57:25.536+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T12:57:27.341+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T12:57:27.429+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2024-07-05T12:57:28.643+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-05T12:57:28.672+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-05T12:57:28.673+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-05T12:57:28.783+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-05T12:57:28.783+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3152 ms
+2024-07-05T12:57:29.210+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T12:57:29.460+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:1c040993-a5ac-4f1c-9276-b2347b43483f user=SA
+2024-07-05T12:57:29.464+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T12:57:29.559+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T12:57:29.684+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T12:57:29.743+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T12:57:30.176+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T12:57:31.561+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T12:57:31.653+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T12:57:32.501+05:30  WARN 12136 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T12:57:34.337+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T12:57:34.499+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-05T12:57:34.518+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Started Li4ExploreCaliforniaApplication in 9.641 seconds (process running for 10.769)
+2024-07-05T12:57:35.905+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-05T12:57:35.906+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-05T12:57:35.910+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-07-05T12:57:47.719+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1010 ms
+2024-07-05T16:37:04.975+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(225)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-05T16:37:05.012+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(225)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T16:37:05.027+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(225)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T16:37:05.035+05:30  INFO 12136 --- [Li4_ExploreCalifornia] [RMI TCP Connection(225)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T16:37:10.663+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 776 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T16:37:10.678+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T16:37:16.281+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T16:37:16.432+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 3 JPA repository interfaces.
+2024-07-05T16:37:18.044+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-05T16:37:18.076+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-05T16:37:18.077+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-05T16:37:18.204+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-05T16:37:18.205+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7358 ms
+2024-07-05T16:37:18.667+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T16:37:18.915+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:38b99fca-159c-4d6a-a01b-8230d4340c88 user=SA
+2024-07-05T16:37:18.918+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T16:37:18.990+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T16:37:19.085+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T16:37:19.138+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T16:37:19.568+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T16:37:21.001+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T16:37:21.089+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T16:37:21.993+05:30  WARN 776 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T16:37:23.776+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T16:37:24.043+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-05T16:37:24.081+05:30  INFO 776 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Started Li4ExploreCaliforniaApplication in 14.949 seconds (process running for 16.891)
+2024-07-05T16:37:28.860+05:30  INFO 776 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-05T16:37:28.860+05:30  INFO 776 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-05T16:37:28.863+05:30  INFO 776 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-07-05T16:37:57.914+05:30  INFO 776 --- [Li4_ExploreCalifornia] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-05T16:37:57.938+05:30  INFO 776 --- [Li4_ExploreCalifornia] [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T16:37:57.946+05:30  INFO 776 --- [Li4_ExploreCalifornia] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T16:37:57.951+05:30  INFO 776 --- [Li4_ExploreCalifornia] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T16:38:01.127+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 13656 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T16:38:01.132+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T16:38:03.179+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T16:38:03.278+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 3 JPA repository interfaces.
+2024-07-05T16:38:04.367+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-05T16:38:04.393+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-05T16:38:04.394+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-05T16:38:04.499+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-05T16:38:04.500+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3281 ms
+2024-07-05T16:38:04.916+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T16:38:05.168+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:0ae9a97c-4429-46e4-85d3-4a338a4cf21d user=SA
+2024-07-05T16:38:05.171+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T16:38:05.247+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T16:38:05.338+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T16:38:05.400+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T16:38:05.839+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T16:38:07.242+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T16:38:07.342+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T16:38:08.176+05:30  WARN 13656 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T16:38:09.938+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T16:38:10.109+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-05T16:38:10.129+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Started Li4ExploreCaliforniaApplication in 9.627 seconds (process running for 10.824)
+2024-07-05T16:38:11.065+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-05T16:38:11.066+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-05T16:38:11.068+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-05T16:38:25.059+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1376 ms
+2024-07-05T16:40:15.213+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-05T16:40:15.232+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T16:40:15.240+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T16:40:15.245+05:30  INFO 13656 --- [Li4_ExploreCalifornia] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T16:40:18.745+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 17672 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T16:40:18.748+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T16:40:20.477+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T16:40:20.615+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 3 JPA repository interfaces.
+2024-07-05T16:40:21.682+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-05T16:40:21.712+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-05T16:40:21.712+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-05T16:40:21.829+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-05T16:40:21.830+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2980 ms
+2024-07-05T16:40:22.254+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T16:40:22.517+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:38763651-a6fc-41b5-9ec7-7c5d487763c4 user=SA
+2024-07-05T16:40:22.521+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T16:40:22.599+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T16:40:22.695+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T16:40:22.760+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T16:40:23.190+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T16:40:24.589+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T16:40:24.687+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T16:40:25.522+05:30  WARN 17672 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T16:40:27.271+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T16:40:27.437+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-05T16:40:27.456+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Started Li4ExploreCaliforniaApplication in 9.469 seconds (process running for 10.687)
+2024-07-05T16:40:28.719+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-05T16:40:28.719+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-05T16:40:28.724+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-07-05T16:40:39.263+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1043 ms
+2024-07-05T19:38:59.654+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [RMI TCP Connection(185)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-05T19:38:59.832+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [RMI TCP Connection(185)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T19:38:59.890+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [RMI TCP Connection(185)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T19:38:59.899+05:30  INFO 17672 --- [Li4_ExploreCalifornia] [RMI TCP Connection(185)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T19:39:04.164+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 18488 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T19:39:04.238+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T19:39:06.559+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T19:39:06.656+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+2024-07-05T19:39:07.889+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-05T19:39:07.931+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-05T19:39:07.932+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-05T19:39:08.047+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-05T19:39:08.048+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3679 ms
+2024-07-05T19:39:08.486+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T19:39:08.804+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:473c6cef-28ce-4515-b704-0858ab385c83 user=SA
+2024-07-05T19:39:08.807+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T19:39:08.896+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T19:39:09.043+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T19:39:09.113+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T19:39:09.628+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T19:39:11.295+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T19:39:11.403+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T19:39:12.257+05:30  WARN 18488 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T19:39:14.039+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T19:39:14.199+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-05T19:39:14.230+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Started Li4ExploreCaliforniaApplication in 10.807 seconds (process running for 12.02)
+2024-07-05T19:39:15.442+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-05T19:39:15.443+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-05T19:39:15.445+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-05T19:39:23.472+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1292 ms
+2024-07-05T19:40:14.496+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-05T19:40:14.522+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T19:40:14.534+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-05T19:40:14.541+05:30  INFO 18488 --- [Li4_ExploreCalifornia] [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-05T19:40:17.921+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 18544 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li5_BestPractices)
+2024-07-05T19:40:17.925+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-05T19:40:19.701+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-05T19:40:19.787+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+2024-07-05T19:40:21.012+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-05T19:40:21.030+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-05T19:40:21.031+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-05T19:40:21.135+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-05T19:40:21.136+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3119 ms
+2024-07-05T19:40:21.816+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-05T19:40:22.175+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a5b752ea-6336-45c9-8bcc-6571a1bc9185 user=SA
+2024-07-05T19:40:22.178+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-05T19:40:22.254+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-05T19:40:22.359+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-05T19:40:22.423+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-05T19:40:22.953+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-05T19:40:24.382+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-05T19:40:24.479+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-05T19:40:25.362+05:30  WARN 18544 --- [Li4_ExploreCalifornia] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-05T19:40:27.262+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-07-05T19:40:27.398+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-05T19:40:27.426+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [main] L.Li4ExploreCaliforniaApplication        : Started Li4ExploreCaliforniaApplication in 10.089 seconds (process running for 11.096)
+2024-07-05T19:40:28.680+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-05T19:40:28.681+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-05T19:40:28.683+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-05T19:40:34.318+05:30  INFO 18544 --- [Li4_ExploreCalifornia] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1529 ms

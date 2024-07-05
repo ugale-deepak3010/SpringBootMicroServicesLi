@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import Li4_ExploreCalifornia.Model.Difficulty;
 import Li4_ExploreCalifornia.Model.Tour;
 import Li4_ExploreCalifornia.Model.TourPackage;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
 
 /*
@@ -24,7 +25,7 @@ import Li4_ExploreCalifornia.Model.TourPackage;
  * 
  */
 
-
+@Tag(name = "Tour Repo", description = "Tour repository for API.")
 @Repository
 public interface TourRepo extends JpaRepository<Tour, Integer> {
 

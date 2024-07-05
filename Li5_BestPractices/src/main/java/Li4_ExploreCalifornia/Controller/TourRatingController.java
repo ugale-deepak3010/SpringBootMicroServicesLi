@@ -19,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import Li4_ExploreCalifornia.Dto.TourRatingDto;
 import Li4_ExploreCalifornia.Model.TourRating;
 import Li4_ExploreCalifornia.Service.TourRatingService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.websocket.server.PathParam;
 import lombok.extern.slf4j.Slf4j;
@@ -30,29 +32,28 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RestController
 @Slf4j
 @RequestMapping(path = "/tours/{tourId}/ratings")
+@Tag(name = "Tour Rating", description = "This controller use for tour rating.")
 public class TourRatingController {
 
 	@Autowired
 	private TourRatingService tourRatingService;
-	
-	
-	
-	
-	@PostMapping("/batch")	
-	public String postBatchTourRating(@PathVariable int tourId, @PathParam("score") int score, @RequestBody  List<Integer> customers) {
-		
+
+	@PostMapping("/batch")
+	@Operation(summary = "This mathod is use for post multiple customers for rating the tour!")
+	public String postBatchTourRating(@PathVariable int tourId, @PathParam("score") int score,
+			@RequestBody List<Integer> customers) {
+
 		tourRatingService.rateMany(tourId, score, customers);
-		
+
 		return "Added Successfully..!";
 	}
-	
 
 	@GetMapping("/tours")
+	@Operation(summary = "Get all Tours rating")
 	public List<TourRatingDto> getAllRatingsForTour(@PathVariable(value = "tourId") int tourId) {
 
 		log.error("get in Test Error");
-		
-		
+
 		List<TourRating> tourRatings = tourRatingService.lookupRatingByTour(tourId);
 
 		List<TourRatingDto> tourRatingDtos = new ArrayList<TourRatingDto>();
@@ -67,18 +68,20 @@ public class TourRatingController {
 
 	@PostMapping
 	@ResponseStatus(value = HttpStatus.CREATED)
+	@Operation(summary = "Create new tour rating")
 	public String createTourRating(@PathVariable(value = "tourId") int tourId,
 			@RequestBody @Valid TourRatingDto tourRatingDto) {
-		
-		log.info("POST /tours/"+tourId+"/ratings");
+
+		log.info("POST /tours/" + tourId + "/ratings");
 
 		tourRatingService.createNew(tourId, tourRatingDto.getCustomerId(), tourRatingDto.getScore(),
 				tourRatingDto.getComment());
-		
+
 		return "Tour Rating added successfully..!";
 	}
 
 	@ExceptionHandler(NoSuchElementException.class)
+	@Operation(summary = "Handle exceptions!")
 	@ResponseStatus(value = HttpStatus.NOT_FOUND)
 	public String return404(NoSuchElementException noSuchElementException) {
 
@@ -86,6 +89,7 @@ public class TourRatingController {
 		return noSuchElementException.getMessage();
 	}
 
+	@Operation(summary = "Get avg rating!")
 	@GetMapping("/average")
 	public Double getAverageRating(@PathVariable int tourId) {
 
@@ -93,6 +97,7 @@ public class TourRatingController {
 	}
 
 	@PutMapping
+	@Operation(summary = "update existing tour rating!")
 	public TourRatingDto updateTourRating(@PathVariable int tourId, @RequestBody @Valid TourRatingDto tourRatingDto) {
 
 		return tourRatingService.update(tourId, tourRatingDto.getCustomerId(), tourRatingDto.getScore(),
@@ -100,6 +105,7 @@ public class TourRatingController {
 	}
 
 	@PatchMapping
+	@Operation(summary = "Update spicific tour rating")
 	public TourRatingDto patchTourRating(@PathVariable int tourId, @RequestBody @Valid TourRatingDto tourRatingDto) {
 
 		return tourRatingService.updateSome(tourId, tourRatingDto.getCustomerId(),
@@ -107,6 +113,7 @@ public class TourRatingController {
 	}
 
 	@DeleteMapping("/{customerId}")
+	@Operation(summary = "Delete existing ratings!")
 	public String deleteTourRating(@PathVariable int tourId, @PathVariable int customerId,
 			@RequestBody TourRatingDto tourRatingDto) {
 
