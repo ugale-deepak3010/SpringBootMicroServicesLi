@@ -21,12 +21,14 @@ import Li4_ExploreCalifornia.Model.TourRating;
 import Li4_ExploreCalifornia.Service.TourRatingService;
 import jakarta.validation.Valid;
 import jakarta.websocket.server.PathParam;
+import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
+@Slf4j
 @RequestMapping(path = "/tours/{tourId}/ratings")
 public class TourRatingController {
 
@@ -48,6 +50,9 @@ public class TourRatingController {
 	@GetMapping("/tours")
 	public List<TourRatingDto> getAllRatingsForTour(@PathVariable(value = "tourId") int tourId) {
 
+		log.error("get in Test Error");
+		
+		
 		List<TourRating> tourRatings = tourRatingService.lookupRatingByTour(tourId);
 
 		List<TourRatingDto> tourRatingDtos = new ArrayList<TourRatingDto>();
@@ -64,6 +69,8 @@ public class TourRatingController {
 	@ResponseStatus(value = HttpStatus.CREATED)
 	public String createTourRating(@PathVariable(value = "tourId") int tourId,
 			@RequestBody @Valid TourRatingDto tourRatingDto) {
+		
+		log.info("POST /tours/"+tourId+"/ratings");
 
 		tourRatingService.createNew(tourId, tourRatingDto.getCustomerId(), tourRatingDto.getScore(),
 				tourRatingDto.getComment());

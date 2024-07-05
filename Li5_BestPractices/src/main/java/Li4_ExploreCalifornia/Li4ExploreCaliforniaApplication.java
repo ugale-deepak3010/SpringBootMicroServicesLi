@@ -30,7 +30,11 @@ public class Li4ExploreCaliforniaApplication implements CommandLineRunner {
 	TourService tourService;
 
 	public static void main(String[] args) {
+		
+		
+		
 		SpringApplication.run(Li4ExploreCaliforniaApplication.class, args);
+		
 	}
 
 	@Override

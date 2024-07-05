@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @ControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
@@ -20,6 +23,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	public ResponseEntity<Object> handleNoSuchElementException(NoSuchElementException noSuchElementException,
 			WebRequest webRequest) {
 
+		log.error("Error is 1: "+noSuchElementException.getMessage());
+		
 		ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND,
 				noSuchElementException.getMessage());
 
@@ -30,6 +35,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	public ResponseEntity<Object> handleResourceNotFound(ResourceNotFoundException resourceNotFoundException,
 			WebRequest webRequest) {
 
+		log.error("Error is 2: "+resourceNotFoundException.getMessage());
+		
 		ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND,
 				resourceNotFoundException.getMessage());
 
@@ -40,6 +47,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<Object> anyOtherException(Exception e, WebRequest webRequest) {
 
+		log.error("Error is: "+e.getMessage());
+		
 		ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(HttpStatus.INTERNAL_SERVER_ERROR,
 				e.getMessage());
 
