@@ -1,0 +1,154 @@
+2024-07-07T11:33:57.692+05:30  INFO 15636 --- [Li7_UsingDockersMySQL] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 15636 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL)
+2024-07-07T11:33:57.722+05:30  INFO 15636 --- [Li7_UsingDockersMySQL] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-07T11:33:57.885+05:30  INFO 15636 --- [Li7_UsingDockersMySQL] [main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL\compose.yml'
+2024-07-07T11:34:00.664+05:30  INFO 15636 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Recreate
+2024-07-07T11:34:01.296+05:30  INFO 15636 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Recreated
+2024-07-07T11:34:01.309+05:30  INFO 15636 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Starting
+2024-07-07T11:34:01.877+05:30  INFO 15636 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Started
+2024-07-07T11:34:01.877+05:30  INFO 15636 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Waiting
+2024-07-07T11:34:02.394+05:30  INFO 15636 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Healthy
+2024-07-07T11:36:04.058+05:30 ERROR 15636 --- [Li7_UsingDockersMySQL] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.boot.docker.compose.lifecycle.ReadinessTimeoutException: Readiness timeout of PT2M reached while waiting for services [li7_usingdockersmysql-mysql-1]
+	at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.waitUntilReady(ServiceReadinessChecks.java:83) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:141) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.1.jar:3.3.1]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.1.jar:3.3.1]
+	at Li4_ExploreCalifornia.Li4ExploreCaliforniaApplication.main(Li4ExploreCaliforniaApplication.java:36) ~[classes/:na]
+	Suppressed: org.springframework.boot.docker.compose.lifecycle.ServiceNotReadyException: Immediate disconnect while connecting to port 50252
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:71) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:58) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:48) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.check(ServiceReadinessChecks.java:97) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.waitUntilReady(ServiceReadinessChecks.java:77) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		... 19 common frames omitted
+
+2024-07-07T11:38:46.635+05:30  INFO 15388 --- [Li7_UsingDockersMySQL] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 15388 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL)
+2024-07-07T11:38:46.639+05:30  INFO 15388 --- [Li7_UsingDockersMySQL] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-07T11:38:46.784+05:30  INFO 15388 --- [Li7_UsingDockersMySQL] [main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL\compose.yml'
+2024-07-07T11:38:49.247+05:30  INFO 15388 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Created
+2024-07-07T11:38:49.257+05:30  INFO 15388 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Starting
+2024-07-07T11:38:49.721+05:30  INFO 15388 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Started
+2024-07-07T11:38:49.721+05:30  INFO 15388 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Waiting
+2024-07-07T11:38:50.250+05:30  INFO 15388 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Healthy
+2024-07-07T11:40:51.328+05:30 ERROR 15388 --- [Li7_UsingDockersMySQL] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.boot.docker.compose.lifecycle.ReadinessTimeoutException: Readiness timeout of PT2M reached while waiting for services [li7_usingdockersmysql-mysql-1]
+	at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.waitUntilReady(ServiceReadinessChecks.java:83) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:141) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.1.jar:3.3.1]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.1.jar:3.3.1]
+	at Li4_ExploreCalifornia.Li4ExploreCaliforniaApplication.main(Li4ExploreCaliforniaApplication.java:36) ~[classes/:na]
+	Suppressed: org.springframework.boot.docker.compose.lifecycle.ServiceNotReadyException: Immediate disconnect while connecting to port 50479
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:71) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:58) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:48) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.check(ServiceReadinessChecks.java:97) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.waitUntilReady(ServiceReadinessChecks.java:77) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		... 19 common frames omitted
+
+2024-07-07T11:46:30.169+05:30  INFO 20284 --- [Li7_UsingDockersMySQL] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 20284 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL)
+2024-07-07T11:46:30.174+05:30  INFO 20284 --- [Li7_UsingDockersMySQL] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-07T11:46:30.348+05:30  INFO 20284 --- [Li7_UsingDockersMySQL] [main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL\compose.yml'
+2024-07-07T11:46:33.213+05:30  INFO 20284 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Recreate
+2024-07-07T11:46:34.155+05:30  INFO 20284 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Recreated
+2024-07-07T11:46:34.182+05:30  INFO 20284 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Starting
+2024-07-07T11:46:35.019+05:30  INFO 20284 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Started
+2024-07-07T11:46:35.020+05:30  INFO 20284 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Waiting
+2024-07-07T11:47:05.532+05:30  INFO 20284 --- [Li7_UsingDockersMySQL] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container li7_usingdockersmysql-mysql-1  Healthy
+2024-07-07T11:49:07.097+05:30 ERROR 20284 --- [Li7_UsingDockersMySQL] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.boot.docker.compose.lifecycle.ReadinessTimeoutException: Readiness timeout of PT2M reached while waiting for services [li7_usingdockersmysql-mysql-1]
+	at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.waitUntilReady(ServiceReadinessChecks.java:83) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:141) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.1.jar:3.3.1]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.1.jar:3.3.1]
+	at Li4_ExploreCalifornia.Li4ExploreCaliforniaApplication.main(Li4ExploreCaliforniaApplication.java:36) ~[classes/:na]
+	Suppressed: org.springframework.boot.docker.compose.lifecycle.ServiceNotReadyException: Immediate disconnect while connecting to port 50851
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:71) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:58) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:48) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.check(ServiceReadinessChecks.java:97) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.waitUntilReady(ServiceReadinessChecks.java:77) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		... 19 common frames omitted
+
+2024-07-07T12:22:54.954+05:30  INFO 8976 --- [Li7_UsingDockersMySQL] [main] L.Li4ExploreCaliforniaApplication        : Starting Li4ExploreCaliforniaApplication using Java 22.0.1 with PID 8976 (C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL\target\classes started by ugale in C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL)
+2024-07-07T12:22:54.966+05:30  INFO 8976 --- [Li7_UsingDockersMySQL] [main] L.Li4ExploreCaliforniaApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-07T12:22:55.190+05:30  INFO 8976 --- [Li7_UsingDockersMySQL] [main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\ugale\Workspace\eclipse_workplace_cloned\SpringBootMicroServicesLi\Li7_UsingDockersMySQL\compose.yml'
+2024-07-07T12:22:59.097+05:30  INFO 8976 --- [Li7_UsingDockersMySQL] [main] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
+2024-07-07T12:24:59.625+05:30 ERROR 8976 --- [Li7_UsingDockersMySQL] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.boot.docker.compose.lifecycle.ReadinessTimeoutException: Readiness timeout of PT2M reached while waiting for services [li7_usingdockersmysql-mysql-1]
+	at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.waitUntilReady(ServiceReadinessChecks.java:83) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:141) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.1.jar:3.3.1]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.1.jar:3.3.1]
+	at Li4_ExploreCalifornia.Li4ExploreCaliforniaApplication.main(Li4ExploreCaliforniaApplication.java:36) ~[classes/:na]
+	Suppressed: org.springframework.boot.docker.compose.lifecycle.ServiceNotReadyException: Immediate disconnect while connecting to port 64908
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:71) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:58) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.TcpConnectServiceReadinessCheck.check(TcpConnectServiceReadinessCheck.java:48) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.check(ServiceReadinessChecks.java:97) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		at org.springframework.boot.docker.compose.lifecycle.ServiceReadinessChecks.waitUntilReady(ServiceReadinessChecks.java:77) ~[spring-boot-docker-compose-3.3.1.jar:3.3.1]
+		... 19 common frames omitted
+

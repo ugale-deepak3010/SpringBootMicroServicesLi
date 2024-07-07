@@ -33,6 +33,21 @@
 	<dependencies>
 
 
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-docker-compose</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+
 		<!-- http://localhost:8080/swagger-ui/index.html -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
@@ -93,7 +108,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
@@ -104,8 +119,8 @@
 					</from>
 				</configuration>
 			</plugin>
-			
-			
+
+
 		</plugins>
 	</build>
 
