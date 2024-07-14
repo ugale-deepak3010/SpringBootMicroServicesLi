@@ -3,18 +3,8 @@ services:
       image: mysql:latest
       environment:
       - MYSQL_DATABASE=deepdb
-      - MYSQL_PASSWORD=TestPass@1234
-      - MYSQL_ROOT_PASSWORD=MasterTest@1234
+      - MYSQL_PASSWORD=mypass
+      - MYSQL_ROOT_PASSWORD=masterpass
       - MYSQL_USER=deepuser
       ports:
-      - 3309
-      restart: always
-      healthcheck:
-         test:
-         - CMD
-         - mysqladmin
-         - ping
-         - -h
-         - localhost
-         timeout: 20s
-         retries: 100
+      - 3306
