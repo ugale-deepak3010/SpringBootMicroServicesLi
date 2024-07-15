@@ -26,7 +26,7 @@ import lombok.ToString;
 public class Tour {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 	private String title;
@@ -36,6 +36,9 @@ public class Tour {
 
 	@Column(length = 2000)
 	private String blurb;
+
+	@Column(length = 2000)
+	private String bullets;
 
 	private int price;
 	private String duration;

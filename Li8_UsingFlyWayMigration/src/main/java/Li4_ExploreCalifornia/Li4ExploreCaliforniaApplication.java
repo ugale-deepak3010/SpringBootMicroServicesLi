@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.DatabindException;
 
 import Li4_ExploreCalifornia.Model.Difficulty;
 import Li4_ExploreCalifornia.Model.Region;
-import Li4_ExploreCalifornia.Model.TourFromFile;
+import Li4_ExploreCalifornia.Service.TourFromFile;
 import Li4_ExploreCalifornia.Service.TourPackageService;
 import Li4_ExploreCalifornia.Service.TourService;
 
@@ -70,18 +70,24 @@ public class Li4ExploreCaliforniaApplication implements CommandLineRunner {
 
 		
 		TourFromFile.read(tourImportFile).forEach(tourFromFile->{
-			tourService.createTour(tourFromFile.packageName(), 
-					tourFromFile.title(),
-					tourFromFile.description(),
-					tourFromFile.blurb(),
-					tourFromFile.price(),
-					tourFromFile.length(),
-					tourFromFile.bullets(),
-					tourFromFile.keywords(),
-					Difficulty.valueOf(tourFromFile.difficulty().toUpperCase()),
-					Region.findByLabel(tourFromFile.region()),
-					null
-					);
+						
+			try {
+				tourService.createTour(
+						tourFromFile.packageName(), 
+						tourFromFile.title(),
+						tourFromFile.description(),
+						tourFromFile.blurb(),
+						tourFromFile.price(),
+						tourFromFile.length(),
+						tourFromFile.bullets(),
+						tourFromFile.keywords(),
+						Difficulty.valueOf(tourFromFile.difficulty().toUpperCase()),
+						Region.findByLabel(tourFromFile.region())					
+						);
+			} catch (Throwable e) {
+				
+				e.printStackTrace();
+			}
 		});
 	}
 

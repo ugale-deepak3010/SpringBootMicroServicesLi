@@ -7,4 +7,4 @@ services:
       - MYSQL_ROOT_PASSWORD=masterpass
       - MYSQL_USER=deepuser
       ports:
-      - 3306
+      - '3307:3306'

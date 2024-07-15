@@ -28,28 +28,27 @@ public class TourService {
 	}
 
 	public Tour createTour(String packageName, String title, String description, String blurb, int price, String length,
-			String bullets, String keywords, Difficulty difficulty, Region region, TourPackage tourPackage ) {
+			String bullets, String keywords, Difficulty difficulty, Region region) throws Throwable {
 
-		return tourRepo
-				.save(new Tour((int) (total() + 1), title, description, blurb, price, length, keywords, region, difficulty, null));
+		TourPackage tourPackage = tourPackageRepo.findByName(packageName)
+				.orElseThrow(() -> new Throwable("Package not found: " + packageName));
+
+		return tourRepo.save(new Tour((int) (total() + 1), title, description, blurb, bullets, price, length, keywords,
+				region, difficulty, tourPackage));
 
 	}
 
 	public long total() {
 		return tourRepo.count();
 	}
-	
-	
+
 	public List<Tour> lookuByDifficulty(Difficulty difficulty) {
-	 return	tourRepo.findByDifficulty(difficulty);
+		return tourRepo.findByDifficulty(difficulty);
 	}
-	
+
 	public List<Tour> lookupByPackageCode(TourPackage tourPackageCode) {
-		
+
 		return tourRepo.findByTourPackageCode(tourPackageCode);
 	}
-	
-	
-	
 
 }

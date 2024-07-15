@@ -1,4 +1,4 @@
-package Li4_ExploreCalifornia.Model;
+package Li4_ExploreCalifornia.Service;
 
 import java.io.File;
 import java.io.IOException;
