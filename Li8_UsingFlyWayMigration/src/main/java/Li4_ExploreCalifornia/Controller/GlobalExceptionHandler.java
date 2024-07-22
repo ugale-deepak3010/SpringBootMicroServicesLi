@@ -49,6 +49,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
 		log.error("Error is: "+e.getMessage());
 		
+		
+		
 		ProblemDetail problemDetail = ProblemDetail.forStatusAndDetail(HttpStatus.INTERNAL_SERVER_ERROR,
 				e.getMessage());
 

@@ -12,7 +12,6 @@ import com.TourImageService.Service.ImageService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.websocket.server.PathParam;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;

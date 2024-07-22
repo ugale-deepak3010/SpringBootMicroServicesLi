@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import Li4_ExploreCalifornia.Dto.TourRatingDto;
+import Li4_ExploreCalifornia.Model.Tour;
 import Li4_ExploreCalifornia.Model.TourRating;
 import Li4_ExploreCalifornia.Service.TourRatingService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -31,12 +32,18 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
 @Slf4j
-@RequestMapping(path = "/tours/{tourId}/ratings")
+@RequestMapping
 @Tag(name = "Tour Rating", description = "This controller use for tour rating.")
 public class TourRatingController {
 
 	@Autowired
 	private TourRatingService tourRatingService;
+
+	@GetMapping("/tours")
+	public List<Tour> getAllTours() {
+
+		return tourRatingService.getAllTours();
+	}
 
 	@PostMapping("/batch")
 	@Operation(summary = "This mathod is use for post multiple customers for rating the tour!")
@@ -48,7 +55,7 @@ public class TourRatingController {
 		return "Added Successfully..!";
 	}
 
-	@GetMapping("/tours")
+	@GetMapping(path = "/tours/{tourId}/ratings")
 	@Operation(summary = "Get all Tours rating")
 	public List<TourRatingDto> getAllRatingsForTour(@PathVariable(value = "tourId") int tourId) {
 
@@ -66,7 +73,7 @@ public class TourRatingController {
 		return tourRatingDtos;
 	}
 
-	@PostMapping
+	@PostMapping(path = "/tours/{tourId}/ratings")
 	@ResponseStatus(value = HttpStatus.CREATED)
 	@Operation(summary = "Create new tour rating")
 	public String createTourRating(@PathVariable(value = "tourId") int tourId,

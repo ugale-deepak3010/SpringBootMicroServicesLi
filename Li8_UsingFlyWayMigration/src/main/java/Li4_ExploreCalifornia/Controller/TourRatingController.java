@@ -55,9 +55,11 @@ public class TourRatingController {
 		log.error("get in Test Error");
 
 		List<TourRating> tourRatings = tourRatingService.lookupRatingByTour(tourId);
+		System.err.println("Pass");
 
 		List<TourRatingDto> tourRatingDtos = new ArrayList<TourRatingDto>();
 
+		System.err.println("TourRating =" + tourRatings.toString() );
 		for (TourRating tourRating : tourRatings) {
 			tourRatingDtos
 					.add(new TourRatingDto(tourRating.getScore(), tourRating.getComment(), tourRating.getCustomerId()));
@@ -73,6 +75,7 @@ public class TourRatingController {
 			@RequestBody @Valid TourRatingDto tourRatingDto) {
 
 		log.info("POST /tours/" + tourId + "/ratings");
+		log.info("Provided Rating Object: "+tourRatingDto.toString());
 
 		tourRatingService.createNew(tourId, tourRatingDto.getCustomerId(), tourRatingDto.getScore(),
 				tourRatingDto.getComment());

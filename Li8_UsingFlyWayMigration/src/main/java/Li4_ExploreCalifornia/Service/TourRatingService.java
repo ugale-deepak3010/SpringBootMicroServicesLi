@@ -69,6 +69,7 @@ public class TourRatingService {
 
 	public List<TourRating> lookupRatingByTour(int tourId) {
 
+		System.err.println("Finding Tours");
 		return tourRatingRepo.findByTourId(tourId);
 	}
 
