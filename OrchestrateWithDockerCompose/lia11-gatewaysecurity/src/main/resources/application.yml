@@ -1,0 +1,14 @@
+spring:
+   cloud:
+      gateway:
+         routes:
+         -  id: Li7-UsingDockersMySQL-Tours-ID
+            uri: ${TOUR_APP_URI:http://localhost:8082}
+            predicates:
+            - Path=/tours/**
+         -  id: Li9TourImagesService
+            uri: ${IMAGES_APP_URI:http://localhost:8081}
+            predicates:
+            - Path=/images/**
+            filters:
+            - PrefixPath=/api

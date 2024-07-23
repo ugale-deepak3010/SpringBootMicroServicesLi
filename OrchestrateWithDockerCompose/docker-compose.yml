@@ -1,0 +1,57 @@
+services:
+   mysql-db:
+      image: mysql:latest
+      restart: unless-stopped
+      environment:
+      - MYSQL_ROOT_PASSWORD=masterpass
+      - MYSQL_DATABASE=deepdb
+      ports:
+      - 3306:3306
+      volumes:
+      - ./data/mysql:/var/lib/mysql
+
+   mongo-db:
+      image: mongo:5.0.2
+      restart: unless-stopped
+      environment:
+      - MONGO_INIT_ROOT_USERNAME=root
+      - MONGO_INIT_ROOT_PASSWORD=secret
+      ports:
+      - 27017:27017
+      volumes:
+      - ./data/mongo:/data/db
+   li9tourimagesservice:
+      depends_on:
+      - mongo-db
+      restart: on-failure
+      image: li9tourimagesservice:3.0.0
+      ports:
+      - '8081'
+      environment:
+         SPRING_APPLICATION_JSON: '{ "server.port" : "8081", "spring.data.mongodb.uri" : "mongodb://root:secret@mongo-db:27017/mydatabase?authSource=admin",
+            "spring.docker.compose.enabled": "false" }'
+   li7-usingdockersmysql-tours:
+      depends_on:
+      - mysql-db
+      restart: on-failure
+      image: li9tourimagesservice:3.0.0
+      ports:
+      - '8082'
+      environment:
+         SPRING_APPLICATION_JSON: '{ "server.port" : "8082", "spring.datasource.url" : "jdbc:mysql://mysql-db:3306/mydatabase",
+            "spring.datasource.username" : "deepuser", "spring.datasource.password" : "mypass", "spring.docker.compose.enabled":
+            "false" }'
+   lia11-gatewaysecurity:
+      depends_on:
+      - li9tourimagesservice
+      - li7-usingdockersmysql-tours
+      restart: on-failure
+      image: lia11-gatewaysecurity:3.0.0
+      ports:
+      - 8080:8080
+      environment:
+      - MONGO_APP_URI=http://mongo-app:8081
+      - JPA_APP_URI=http://jpa-app:8082
+
+volumes:
+   db: null

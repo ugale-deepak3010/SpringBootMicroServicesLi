@@ -1,0 +1,10 @@
+services:
+   mysql:
+      image: mysql:latest
+      environment:
+      - MYSQL_DATABASE=deepdb
+      - MYSQL_PASSWORD=mypass
+      - MYSQL_ROOT_PASSWORD=masterpass
+      - MYSQL_USER=deepuser
+      ports:
+      - 3306

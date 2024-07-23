@@ -9,11 +9,34 @@
 	<name>OrchestrateWithDockerCompose</name>
 	<description>OrchestrateWithDockerCompose</description>
 	
+	<properties>
+		<java.version>22</java.version>
+	</properties>
+
 	<modules>
-		<module>Li7-UsingDockersMySQL-Tours</module>
-		<module>Li9TourImagesService</module>
-		<module>Lia10_Gateway</module>
+		<module>li7-usingdockersmysql-tours</module>
+		<module>li9tourimagesservice</module>
+		<module>lia11-gatewaysecurity</module>
 	</modules>
-	
-	
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.3</version>
+				<configuration>
+					<skip>
+						true
+					</skip>
+					
+					<from>
+						<image>eclipse-temurin:22-jre</image>
+					</from>
+				
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
